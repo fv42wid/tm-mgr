@@ -3,6 +3,9 @@ import Vuetify from 'vuetify'
 import  TurbolinksAdapter from 'vue-turbolinks'
 import VueResource from 'vue-resource'
 
+import EmployeeIndex from './employee_index.vue'
+import EmployeeShow from './employee_view.vue'
+
 Vue.use(VueResource)
 Vue.use(Vuetify)
 
@@ -22,7 +25,7 @@ document.addEventListener('turbolinks:load', () => {
             ]
         },
         created: function () {
-            console.log('test')
+            console.log('mainMenu created')
         },
         methods: {
             goHome: function() {
@@ -32,6 +35,10 @@ document.addEventListener('turbolinks:load', () => {
                 console.log(link)
                 Turbolinks.visit(link)
             }
+        },
+        components: {
+            'employee-index' : EmployeeIndex,
+            'employee-show' : EmployeeShow
         }
     })
 })

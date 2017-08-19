@@ -2,7 +2,11 @@
   "app.css": "http://0.0.0.0:8080/packs/app.css",
   "app.js": "http://0.0.0.0:8080/packs/app.js",
   "application.js": "http://0.0.0.0:8080/packs/application.js",
+  "employee_index.css": "http://0.0.0.0:8080/packs/employee_index.css",
+  "employee_index.js": "http://0.0.0.0:8080/packs/employee_index.js",
+  "employee_view.js": "http://0.0.0.0:8080/packs/employee_view.js",
   "hello_vue.css": "http://0.0.0.0:8080/packs/hello_vue.css",
   "hello_vue.js": "http://0.0.0.0:8080/packs/hello_vue.js",
+  "vue_main_menu.css": "http://0.0.0.0:8080/packs/vue_main_menu.css",
   "vue_main_menu.js": "http://0.0.0.0:8080/packs/vue_main_menu.js"
 }

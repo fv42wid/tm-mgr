@@ -25,7 +25,7 @@
     </v-navigation-drawer>
     <v-toolbar dark class="primary">
       <v-toolbar-side-icon class="hidden-sm-and-up" @click.stop="sideNav = !sideNav"></v-toolbar-side-icon>
-      <v-toolbar-title dark @click="goHome">tm-mgr</v-toolbar-title>
+      <v-toolbar-title dark @click="goHome" style="cursor: pointer;">tm-mgr</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
         <v-btn flat v-for="item in menuItems" :key="item.title" @click="navigateTo(item.link)">
@@ -34,9 +34,10 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <main>
-      <%= yield %>
-    </main>
+
+  <main>
+    <%= yield %>
+  </main>
   </v-app>
 
   </body>
