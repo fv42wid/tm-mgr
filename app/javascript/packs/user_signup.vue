@@ -63,6 +63,7 @@
                 csrf_token: '',
                 utf8: '',
                 authenticity_token: ''
+
             }
         },
         created: function() {

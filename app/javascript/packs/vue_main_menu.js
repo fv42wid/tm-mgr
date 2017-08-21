@@ -18,7 +18,12 @@ document.addEventListener('turbolinks:load', () => {
         el: element,
         data: {
             sideNav: false,
-            user: null
+            user: null,
+            snackbar: false,
+            context: 'primary',
+            timeout: 3000,
+            text: 'Hello!',
+            y: 'top'
         },
         computed: {
             menuItems() {
@@ -52,6 +57,9 @@ document.addEventListener('turbolinks:load', () => {
             navigateTo: function(link) {
                 console.log(link)
                 Turbolinks.visit(link)
+            },
+            snack() {
+                //this.$emit('snackSuccess')
             }
         },
         components: {
