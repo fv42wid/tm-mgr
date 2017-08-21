@@ -12,7 +12,10 @@
   </head>
 
   <body>
-  <v-app id="main-menu">
+  <%= content_tag :div, id: "current_user", data: {user: current_user} do %>
+  <% end %>
+  <%= content_tag "v-app", id: "main-menu", data: {user: current_user} do %>
+  <!--<v-app id="main-menu">-->
     <v-navigation-drawer temporary v-model="sideNav">
       <v-list>
         <v-list-tile v-for="item in menuItems" :key="item.title" @click="navigateTo(item.link)">
@@ -38,7 +41,7 @@
   <main>
     <%= yield %>
   </main>
-  </v-app>
-
+  <!--</v-app>-->
+  <% end %>
   </body>
 </html>
